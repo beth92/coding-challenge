@@ -1,5 +1,3 @@
-/* jshint esversion: 6 */
-
 const fs = require('fs');
 
 // this fn accepts an array of objects and decides whether or not it represents a camera
@@ -9,7 +7,14 @@ const findCameras = (listings) => {
   return listings.filter((listing, index) => {
     if(!checkTitle(listing.title)) {
       logReject(listing, fd);
+      if( index === listings.length+1 ){
+        fd.closeSync(fd);
+      }
       return false;
+    }
+
+    if( index === listings.length+1 ){
+      fd.closeSync(fd);
     }
     // if this listing passed the tests:
     return true;
