@@ -31,29 +31,3 @@ const isMatch = (camera, product) => {
 
 
 module.exports = {findMatches};
-
-
-
-// const results = [];
-// products.forEach((product, index) => {
-//   results.push({
-//     product_name: product.product_name,
-//     listings: []
-//   });
-//   cameras.forEach((camera) => {
-//     // decide if camera matches product
-//     // if so define match as true
-//     // check if manufacturers match
-//     // check if model is in listing title
-//     if(camera.title.toLowerCase().indexOf(product.model.toLowerCase()) !== -1) {
-//       if(camera.manufacturer.toLowerCase().indexOf(product.manufacturer.tolowerCase()) != -1){
-//         const match = true;
-//       }
-//     }
-//     if(match) {
-//       results[index].listings.push(camera);
-//     }
-//   });
-//
-// });
-// logResults(results);
