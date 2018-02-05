@@ -1,4 +1,5 @@
 const fs = require('fs');
+const utils = require('../utils/utils');
 
 const findMatches = (cameras, products) => {
   const results = products.reduce((accum, product) => {
@@ -11,23 +12,10 @@ const findMatches = (cameras, products) => {
       listings
     }];
   }, []);
-  logResults(results, './results.txt');
+  const resultsItems = results.map(JSON.stringify);
+  utils.logItems(resultsItems, './results.txt');
 };
 
-const logResults = (results, filename) => {
-  const fd = fs.openSync(filename, 'w');
-  const resultsString = results.reduce((accum, result) => {
-    return `${accum}\n${JSON.stringify(result)}`;
-  }, '');
-  fs.appendFileSync(fd, resultsString);
-  fs.closeSync(fd);
-};
-
-
-
-const logResult = (result, fd) => {
-    fs.appendFileSync(fd, `${JSON.stringify(result)}\n`);
-};
 
 const isMatch = (camera, product) => {
   if(camera.title.toLowerCase().indexOf(product.model.toLowerCase()) !== -1) {

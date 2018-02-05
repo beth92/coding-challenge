@@ -1,10 +1,10 @@
 // local imports
-const data = require('./data/data-summary');
+const utils = require('./utils/utils');
 const {findCameras} = require('./cameras/find-cameras');
 const {findMatches} = require('./matches/find-matches');
 
-const listings = data.getInputData('./data/listings.txt');
-const products = data.getInputData('./data/products.txt');
+const listings = utils.getInputData('./listings.txt');
+const products = utils.getInputData('./products.txt');
 
 if(typeof listings === 'string'){
   console.log(`Error: ${listings}`);
