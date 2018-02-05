@@ -1,20 +1,29 @@
 const fs = require('fs');
 
 const findMatches = (cameras, products) => {
-  const fd = fs.openSync('./results.txt', 'w');
-  products.forEach((product) => {
+  const results = products.reduce((accum, product) => {
     const listings = cameras.filter((camera) => {
       // run tests
       return isMatch(camera, product);
     });
-    const result = {
+    return [...accum, {
       product_name: product.product_name,
       listings
-    };
-    logResult(result, fd);
-  });
+    }];
+  }, []);
+  logResults(results, './results.txt');
+};
+
+const logResults = (results, filename) => {
+  const fd = fs.openSync(filename, 'w');
+  const resultsString = results.reduce((accum, result) => {
+    return `${accum}\n${JSON.stringify(result)}`;
+  }, '');
+  fs.appendFileSync(fd, resultsString);
   fs.closeSync(fd);
 };
+
+
 
 const logResult = (result, fd) => {
     fs.appendFileSync(fd, `${JSON.stringify(result)}\n`);
