@@ -6,6 +6,10 @@ const {findMatches} = require('./matches/find-matches');
 const listings = utils.getInputData('./listings.txt');
 const products = utils.getInputData('./products.txt');
 
+if(process.argv[2] && process.argv[2] == '-d') {
+  require('./data/data-summary');
+}
+
 if(typeof listings === 'string'){
   console.log(`Error: ${listings}`);
   process.exit(1);

@@ -20,5 +20,15 @@ const logItems = (items, filename) => {
   fs.closeSync(fd);
 };
 
+// fn to extract distinct values of a property from an array of objects
+const getDistinctValues = (items, prop) => {
+  return items.reduce((accum, item) => {
+    if(accum.includes(item[prop])){
+      return accum;
+    }
+    return [...accum, item[prop]];
+  }, []);
+};
 
-module.exports = {getInputData, logItems};
+
+module.exports = {getInputData, logItems, getDistinctValues};
