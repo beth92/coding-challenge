@@ -3,3 +3,4 @@
 {"product_name":"Sony-WX7","manufacturer":"Sony","model":"WX7","family":"Cybershot ","announced-date":"2011-02-15T19:00:00.000-05:00"}
 {"product_name":"Nikon_Coolpix_S4000","manufacturer":"Nikon","model":"S4000","family":"Coolpix","announced-date":"2010-02-02T19:00:00.000-05:00"}
 {"product_name":"Samsung_SL202","manufacturer":"Samsung","model":"SL202","announced-date":"2009-02-16T19:00:00.000-05:00"}
+{"product_name":"Canon-ELPH-500HS","manufacturer":"Canon","model":"500 HS","family":"ELPH","announced-date":"2011-02-06T19:00:00.000-05:00"}
