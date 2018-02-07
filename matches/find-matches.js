@@ -18,17 +18,26 @@ const findMatches = (cameras, products) => {
 
 
 const isMatch = (camera, product) => {
-  if(camera.title.toLowerCase().indexOf(product.model.toLowerCase()) !== -1) {
-    if(camera.manufacturer.toLowerCase().indexOf(product.manufacturer.toLowerCase()) !== -1){
-      return true;
-    }
+  if( modelInTitle(product.model, camera.title) && manufacturersMatch(camera, product)) {
+    return true;
   }
   return false;
 };
 
+const modelInTitle = (model, title) => {
+  if(utils.sanitize(title).indexOf(utils.sanitize(model)) !== -1) {
+    return true;
+  }
+  else return false;
+};
 
-// TODO: write a function which, for a given product model, generates a list of alternatives
-// if product manufacturer is similar to listing manufacturer
-// AND an alternative model is contained within listing title, make a match
+const manufacturersMatch = (camera, product) => {
+  // return true if the listed manufacturer matches the product manufacturer
+  // or if the product's manufacturer is in the title of listing
+  if (utils.wordInCommon(camera.manufacturer, product.manufacturer) || utils.sanitize(camera.title).indexOf(product.manufacturer) !== -1) {
+    return true;
+  }
+  return false;
+};
 
 module.exports = {findMatches};
