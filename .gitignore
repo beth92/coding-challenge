@@ -3,3 +3,4 @@ node_modules
 .jshintrc
 listings.txt
 products.txt
+results.txt

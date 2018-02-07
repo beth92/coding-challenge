@@ -25,4 +25,4 @@ console.log(`Found ${cameras.length} cameras`);
 
 const results = findMatches(cameras, products);
 
-utils.logItems(results, './results.txt');
+utils.logItems(results.map(JSON.stringify), './results.txt');
