@@ -8,6 +8,8 @@ describe('Test coding challenge', () => {
   const testProducts = utils.getInputData('./tests/test-products.txt');
 
   it('should correctly retrieve the input data', () => {
+    expect(typeof testProducts).toBe('object');
+    expect(typeof testProducts[0]).toBe('object');
     expect(testProducts).toContainEqual({
       "product_name":"Samsung-ES70",
       "manufacturer":"Samsung",
@@ -21,6 +23,8 @@ describe('Test coding challenge', () => {
   const testCameras = findCameras(utils.getInputData('./tests/test-listings.txt'), './tests/test-rejects.txt');
 
   it('should reject accessories', () => {
+    expect(typeof testCameras).toBe('object');
+    expect(typeof testCameras[0]).toBe('object');
     expect(testCameras).not.toContainEqual({
       "title":"DURAGADGET Padded Camera Bag With Shoulder Strap & Zip Pockets For Go Pro Hero HD Head Cams (Helmet Hero, Motorsports Hero, Surf Hero)",
       "manufacturer":"DURAGADGET",
@@ -47,6 +51,16 @@ describe('Test coding challenge', () => {
     });
   });
 
+  const results = findMatches(testCameras, testProducts);
+
+  it('should return results in correct format', () => {
+    expect(typeof results).toBe('object');
+    expect(results).toHaveLength(testProducts.length);
+    expect(typeof results[0].listings).toBe('object');
+    const hasListings = results.every( element => element.listings );
+    expect(hasListings).toBe(true);
+  });
+
   it('should not match two different cameras', () => {
     const wrongListing = {
       "title":"Panasonic Lumix DMC-FP1 12.1 MP Digital Camera with 4x Optical Image Stabilized Zoom and 2.7-Inch LCD (Pink)",
@@ -55,11 +69,8 @@ describe('Test coding challenge', () => {
       "price":"149.47"
     };
     const wrongProduct = "Sony-WX7";
-    const res = findMatches(testCameras, testProducts);
-    expect(res).not.toContainEqual({
-      "product_name": wrongProduct,
-      listings: expect.arrayContaining(wrongListing)
-    });
+    const res = results.find( element => element.product_name === wrongProduct);
+    expect(res.listings).not.toMatchObject(wrongListing);
   });
 
   it('should match two of the same cameras', () => {
@@ -70,12 +81,8 @@ describe('Test coding challenge', () => {
       "price":"299.00"
     };
     const rightProduct = "Canon-ELPH-500HS";
-    const res = findMatches(testCameras, testProducts);
-    // TODO: fix this assertion
-    // expect(res).toMatchObject({
-    //   "product_name": rightProduct,
-    //   listings: expect.arrayContaining(rightListing)
-    // });
+    const res = results.find((element) => element.product_name === rightProduct).listings;
+    expect(res).toContainEqual(rightListing);
   });
 
 });
