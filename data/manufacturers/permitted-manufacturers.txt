@@ -20,6 +20,7 @@ leica
 sony alpha
 ricoh cameras usa
 sigma corporation
+minolta
 ricoh
 eastman kodak company
 canon cameras us
@@ -29,13 +30,12 @@ hp
 konica minolta
 kyocera
 toshiba
-casio
 panasonic consumer
 pentax optio e60 101mp digital camera with 3x optical zoom- pink
 agfa
 epson
+konica
 sony electronics
-panasonic
 olympus america
 canon usa
 canon uk ltd
@@ -45,7 +45,6 @@ samsung electronics uk ltd - digital imaging division
 sony uk consumer electronics instock account
 olympus optical co uk ltd
 samsung digital
-fujifilm
 olympus optical
 samsung phones
 sony computer
@@ -57,17 +56,11 @@ fujifilm imaging systems
 fujifilm electronic imaging europe gmbh - firstorder
 ricoh deutschland gmbh
 pentax europe gmbh
-agfa
-ricoh deutschland gmbh
 casio europe gmbh
 sigma deutschland gmbh
 olympus deutschland gmbh
-agfa
+konica minolta europe gmbh
 nikon 
 yashica kyocera gmbh
 samsung optoelectronic gmbh
 panasonic deutschland gmbh - consumer electronics
-leica
-nikon
-canon
-sony

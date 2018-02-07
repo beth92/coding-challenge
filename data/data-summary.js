@@ -5,9 +5,10 @@ const utils = require('../utils/utils.js');
 const dataSummary = (products, listings) => {
 
   console.log('Running analysis on input first');
-  logManufacturers(products, listings);
-  logModels(products);
 
+  logManufacturers(products, listings);
+
+  logModels(products);
 };
 
 
@@ -31,17 +32,8 @@ const logManufacturers = (products, listings) => {
 // fn to account for edge cases and permit some variance in manufacturer name
 const manufacturerPermitted = (man, manufacturers) => {
   // for a given listed manufacturer name, determine if it has an acceptable match
-  const words = man.split(' ');
-  if (words.length > 1) {
-    // check if manufacturer contains a permitted manufacturer
-    const matchedWords = words.filter((word) => {
-      return manufacturers.includes(word);
-    });
-    if (matchedWords.length > 0) {
-      return true;
-    }
-  }
-  return manufacturers.includes(man);
+  // TODO: refactor utils fn so I don't have to join here 
+  return utils.wordInCommon(man, manufacturers.join(' '));
 };
 
 const logModels = (products) => {

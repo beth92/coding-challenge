@@ -47,7 +47,6 @@ polaroid
 tmate powers
 hewlett packard
 jazz
-jazz
 vivitar vivicam
 sakar
 ansmann
@@ -65,7 +64,6 @@ sunset electronics
 sony alpha
 ricoh cameras usa
 acmaxx
-digital
 special
 opteka
 made products
@@ -124,8 +122,6 @@ pelco
 olmypus
 gateway
 jvc
-vivitar
-polaroid
 superheadz powershovel
 syntax corporation
 kyocera
@@ -138,7 +134,6 @@ ixtens
 cp technologies
 mga entertainment
 benq
-casio
 clearmax
 panasonic consumer
 brookstone
@@ -173,9 +168,7 @@ gs metals corporation
 300k
 concord
 iclick
-sakar
 jazz photo
-vivitar
 agfa
 apex
 creative
@@ -195,7 +188,6 @@ lumens
 vupoint solutions
 digital peripheral solutions
 konica
-vistaquest
 vupoint
 jazwares inc
 sony electronics
@@ -219,7 +211,6 @@ homevisions
 go photo
 digital concepts
 mitsubishi
-panasonic
 sanyoelectic co ltd
 jwin
 flir systems
@@ -248,14 +239,12 @@ mazoom
 samsung camera
 speedo
 tokai
-hello kitty
 samsung electronics uk ltd - digital imaging division
 sony uk consumer electronics instock account
 olympus optical co uk ltd
 samsung digital
 drift
 lego
-fujifilm
 mattel
 lexibook
 general electrical
@@ -264,9 +253,7 @@ channelgoods
 praktica
 crayola
 epoque
-lumens
 kids 1st digital camera
-speedo
 avon
 aiptek international gmbh
 pure digital technologies
@@ -285,15 +272,11 @@ tech deck
 bosch
 intenso
 samsung phones
-minox
 imc toys
 marlin
-oregon scientific
 digital blue corporation
 ikelite
 trust
-vivitar vivicam
-lego
 advent
 acer
 lumicron
@@ -313,7 +296,6 @@ metabo
 lime shop
 ubisoft
 prostalk
-sakar international inc
 meliconi
 pro power
 takara
@@ -350,12 +332,10 @@ cokin
 ion
 lacie
 mattel inc
-praktica
 goodmans
 shotz
 epsilon
 iomega
-yashica
 crucial
 giochi preziosi
 jansport
@@ -371,7 +351,6 @@ ricoh deutschland gmbh
 pentax europe gmbh
 polaroid deutschland
 disney
-agfa
 drr
 sandisk
 trendwerk77
@@ -379,8 +358,6 @@ lookit
 carat electronics
 tcr gmbh - bundle
 rcp technik gmbh  co kg
-jenoptik
-ricoh deutschland gmbh
 makant
 casio europe gmbh
 ingo devices
@@ -403,10 +380,8 @@ hewlett packard gmbh
 sigma deutschland gmbh
 olympus deutschland gmbh
 voigtlnder
-agfaphoto
 jenimage
 amewi
-agfa
 konica minolta europe gmbh
 yakumo
 m-e
@@ -425,17 +400,14 @@ acer computer gmbh
 mendler
 huber elektronikbedarf
 sagem
-carat electronics
 axdia international gmbh
 ennyah
 sea  sea
 general imaging europe ltd
 intova-deutschland
 seasea
-aiptek international gmbh
 heymann
 flir
-jay-tech
 creative labs
 vertrieb wildermuth
 technaxx
@@ -449,11 +421,9 @@ shop-4-all
 techgalerie
 voigtlaender
 leitz
-technaxx
 samsung optoelectronic gmbh
 panasonic deutschland gmbh - consumer electronics
 techmobility
-sigmatek
 ferrania
 deepview
 braun photo technik
@@ -461,7 +431,6 @@ lomography
 clipsonic technology
 bilora
 luxya
-easypix
 techtraining
 zeiss
 deep view
@@ -473,7 +442,6 @@ thumbs up
 clip sonic technology
 mobility lab
 vivicam
-vistaquest
 canal toys
 swann
 lifetec
@@ -483,7 +451,6 @@ photoflex
 airis
 combelle
 wowwee
-airis
 hahnel
 cullmann
 mayhem
@@ -491,24 +458,19 @@ grtzner
 lite-on
 palmone
 tristar
-tamrac
 hama
 ungaro
 inovalley
 expansys
 big
-lexibook
 apc
 generique
 digital dream
-leica
 kaiser
 erno
 vilac
 lagrange
 sablon
-vistaquest
-noname
 graco
 antquarium
 tefal
@@ -516,9 +478,6 @@ tamron
 oray
 baby dan
 george foreman
-nikon
-canon
 samyang
 cam
 dremel
-sony
