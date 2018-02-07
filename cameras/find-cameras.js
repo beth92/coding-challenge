@@ -1,24 +1,22 @@
 const fs = require('fs');
 
 // this fn accepts an array of objects and decides whether or not it represents a camera
-const findCameras = (listings) => {
-  const fd = fs.openSync('./cameras/rejects.txt', 'w');
-  console.log(`Checking ${listings.length} listings for cameras.`);
-  return listings.filter((listing, index) => {
-    if(!checkTitle(listing.title)) {
-      logReject(listing, fd);
-      if( index === listings.length+1 ){
-        fd.closeSync(fd);
-      }
-      return false;
-    }
+const findCameras = (listings, rejectsFile) => {
 
-    if( index === listings.length+1 ){
-      fd.closeSync(fd);
+  console.log(`Checking ${listings.length} listings for cameras.`);
+  const fd = fs.openSync(rejectsFile, 'w');
+  const permittedManufacturers = getManufacturers();
+
+  const cameras = listings.filter((listing) => {
+    if(checkManufacturer(listing.manufacturer, permittedManufacturers) && checkTitle(listing.title)) {
+      return true;
     }
-    // if this listing passed the tests:
-    return true;
+    logReject(listing, fd);
+    return false;
   });
+  fs.closeSync(fd);
+  return cameras;
+
 };
 
 const logReject = (reject, fd) => {
@@ -28,12 +26,22 @@ const logReject = (reject, fd) => {
 
 const checkTitle = (title) => {
   // hacky methods to check listing title for red flags
-  if(title.toLowerCase().split(' ').slice(0, 3).indexOf('battery') !== -1 ) {
-    return false;
-  } else if(title.split(' ').indexOf('for') !== -1) {
+  if(title.toLowerCase().split(' ').indexOf('for') !== -1) {
     return false;
   }
   return true;
+};
+
+const getManufacturers = () => {
+  return fs.readFileSync('./data/manufacturers/permitted-manufacturers.txt', 'utf-8').split('\n');
+
+};
+
+const checkManufacturer = (man, permittedManufacturers) => {
+  if (permittedManufacturers.includes(man.toLowerCase())) {
+    return true;
+  }
+  return false;
 };
 
 module.exports = {findCameras};

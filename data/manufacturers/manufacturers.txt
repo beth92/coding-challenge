@@ -1,0 +1,21 @@
+sony
+samsung
+nikon
+fujifilm
+casio
+canon
+leica
+olympus
+kodak
+toshiba
+agfa
+panasonic
+epson
+pentax
+hp
+kyocera
+konica minolta
+ricoh
+sigma
+sanyo
+contax

@@ -1,0 +1,5 @@
+{"product_name":"Samsung-ES70","manufacturer":"Samsung","model":"ES70","announced-date":"2009-01-07T19:00:00.000-05:00"}
+{"product_name":"Samsung-ES73","manufacturer":"Samsung","model":"ES73","announced-date":"2010-02-25T19:00:00.000-05:00"}
+{"product_name":"Sony-WX7","manufacturer":"Sony","model":"WX7","family":"Cybershot ","announced-date":"2011-02-15T19:00:00.000-05:00"}
+{"product_name":"Nikon_Coolpix_S4000","manufacturer":"Nikon","model":"S4000","family":"Coolpix","announced-date":"2010-02-02T19:00:00.000-05:00"}
+{"product_name":"Samsung_SL202","manufacturer":"Samsung","model":"SL202","announced-date":"2009-02-16T19:00:00.000-05:00"}
