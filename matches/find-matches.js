@@ -27,4 +27,8 @@ const isMatch = (camera, product) => {
 };
 
 
+// TODO: write a function which, for a given product model, generates a list of alternatives
+// if product manufacturer is similar to listing manufacturer
+// AND an alternative model is contained within listing title, make a match
+
 module.exports = {findMatches};

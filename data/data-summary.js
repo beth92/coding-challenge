@@ -6,16 +6,19 @@ const dataSummary = (products, listings) => {
 
   console.log('Running analysis on input first');
   logManufacturers(products, listings);
-
+  logModels(products);
 
 };
 
+
+
+
 // fn to look at distinct manufacturers of both products and listings
 const logManufacturers = (products, listings) => {
-  const manufacturers = utils.getDistinctValues(products, 'manufacturer').map(item => {return item.toLowerCase();});
+  const manufacturers = utils.getDistinctValues(products, 'manufacturer');
   utils.logItems(manufacturers, './data/manufacturers/manufacturers.txt');
 
-  const listedManufacturers = utils.getDistinctValues(listings, 'manufacturer').map(item => {return item.toLowerCase();});
+  const listedManufacturers = utils.getDistinctValues(listings, 'manufacturer');
   utils.logItems(listedManufacturers, './data/manufacturers/listed-manufacturers.txt');
 
   const permittedManufacturers = listedManufacturers.filter((man) => {
@@ -41,8 +44,10 @@ const manufacturerPermitted = (man, manufacturers) => {
   return manufacturers.includes(man);
 };
 
-
-
+const logModels = (products) => {
+  const models = utils.getDistinctValues(products, 'model');
+  utils.logItems(models, './data/models/models.txt');
+};
 
 
 module.exports = {dataSummary};

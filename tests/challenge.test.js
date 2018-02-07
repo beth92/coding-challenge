@@ -44,4 +44,7 @@ describe('Test coding challenge', () => {
       "price":"48.28"
     });
   });
+
+  // TODO: test matching algorithm
+  
 });

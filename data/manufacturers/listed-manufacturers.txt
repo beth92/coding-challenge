@@ -38,8 +38,8 @@ sigma
 hello kitty
 ----------------------------
 gw
-pas group co., ltd.
-usbonlinedirect communication co., ltd.
+pas group co ltd
+usbonlinedirect communication co ltd
 sunpak
 purtek
 voltage valet
@@ -57,7 +57,7 @@ digital
 true
 db roth
 sony dslr
-axis communication  inc.
+axis communication  inc
 ggs
 leica
 accessory genie
@@ -85,7 +85,7 @@ casecrown
 mat
 eye sun technologicies
 zeikos
-lomo, st. petersburg, russia
+lomo st petersburg russia
 ricoh
 lowepro
 optics
@@ -101,7 +101,7 @@ visiontek mass storage
 norcent
 in focus
 loftus
-s.i.
+si
 pentax imaging company
 sanyo
 hp
@@ -115,7 +115,7 @@ cobra digital
 insignia
 konica minolta
 spectra
-sakar international, inc.
+sakar international inc
 minox usa
 dxg
 takashi
@@ -144,11 +144,11 @@ panasonic consumer
 brookstone
 fuji finepix
 diamond
-pentax optio e60 10.1mp digital camera with 3x optical zoom- pink
+pentax optio e60 101mp digital camera with 3x optical zoom- pink
 
 camera
 zonet
-bell & howell
+bell  howell
 mustek
 bulova
 coleman
@@ -167,7 +167,7 @@ magnavox
 cuffu inc
 oregon scientific
 go photo inc
-fuji photo film usa, inc.
+fuji photo film usa inc
 plustek
 gs metals corporation
 300k
@@ -197,7 +197,7 @@ digital peripheral solutions
 konica
 vistaquest
 vupoint
-jazwares, inc
+jazwares inc
 sony electronics
 isonic
 toys
@@ -206,7 +206,7 @@ intova
 apple computer
 tabata usa
 digital blue
-polaroid 7.0
+polaroid 70
 rca
 rollei
 mitsuba
@@ -220,7 +220,7 @@ go photo
 digital concepts
 mitsubishi
 panasonic
-sanyoelectic co., ltd.
+sanyoelectic co ltd
 jwin
 flir systems
 olympus america
@@ -237,7 +237,7 @@ hitachi
 zenex
 canon uk ltd
 kodak stock account
-delamax (by phottix)
+delamax by phottix
 yashica
 advance
 ingo
@@ -249,9 +249,9 @@ samsung camera
 speedo
 tokai
 hello kitty
-samsung electronics (uk) ltd - digital imaging division
-sony (uk consumer electronics) instock account
-olympus optical co. (uk) ltd
+samsung electronics uk ltd - digital imaging division
+sony uk consumer electronics instock account
+olympus optical co uk ltd
 samsung digital
 drift
 lego
@@ -278,7 +278,7 @@ cc
 luidia
 olympus optical
 sigmatek
-d-link systems, inc.
+d-link systems inc
 kingston
 biostek
 tech deck
@@ -299,21 +299,21 @@ acer
 lumicron
 various
 sony computer
-re:creation group plc
+recreation group plc
 genius
 lesca
 hyundai
 oregon
-sony - cyber-shot dsc-t77 (black)
+sony - cyber-shot dsc-t77 black
 energizer
 lexmark
 jenoptik
-dsc-s980/b
+dsc-s980b
 metabo
 lime shop
 ubisoft
 prostalk
-"sakar international, inc."
+sakar international inc
 meliconi
 pro power
 takara
@@ -349,7 +349,7 @@ saitek
 cokin
 ion
 lacie
-mattel inc.
+mattel inc
 praktica
 goodmans
 shotz
@@ -372,13 +372,13 @@ pentax europe gmbh
 polaroid deutschland
 disney
 agfa
-dörr
+drr
 sandisk
 trendwerk77
 lookit
 carat electronics
 tcr gmbh - bundle
-rcp technik gmbh & co. kg
+rcp technik gmbh  co kg
 jenoptik
 ricoh deutschland gmbh
 makant
@@ -388,21 +388,21 @@ medion
 maginon
 benq deutschland gmbh
 spiderman
-d+n
+dn
 barbie
 sumicom
-ferngläser fernrohre kameras
+fernglser fernrohre kameras
 grandtech gmbh
 carat
 naumann
 lomo cameras
 olymypus
-ingram micro de, ce first order
+ingram micro de ce first order
 technik center rosbach
 hewlett packard gmbh
 sigma deutschland gmbh
 olympus deutschland gmbh
-voigtländer
+voigtlnder
 agfaphoto
 jenimage
 amewi
@@ -413,10 +413,10 @@ m-e
 incutex germany gmbh
 lenco
 klaus stephan gmbh
-nikon +
+nikon 
 opympus
 reekin
-aiptek, inc.
+aiptek inc
 supra
 digitus
 odys
@@ -428,10 +428,10 @@ sagem
 carat electronics
 axdia international gmbh
 ennyah
-sea & sea
+sea  sea
 general imaging europe ltd
 intova-deutschland
-sea&sea
+seasea
 aiptek international gmbh
 heymann
 flir
@@ -487,7 +487,7 @@ airis
 hahnel
 cullmann
 mayhem
-grützner
+grtzner
 lite-on
 palmone
 tristar
@@ -496,7 +496,7 @@ hama
 ungaro
 inovalley
 expansys
-b.i.g.
+big
 lexibook
 apc
 generique

@@ -31,7 +31,7 @@ kyocera
 toshiba
 casio
 panasonic consumer
-pentax optio e60 10.1mp digital camera with 3x optical zoom- pink
+pentax optio e60 101mp digital camera with 3x optical zoom- pink
 agfa
 epson
 sony electronics
@@ -41,15 +41,15 @@ canon usa
 canon uk ltd
 kodak stock account
 samsung camera
-samsung electronics (uk) ltd - digital imaging division
-sony (uk consumer electronics) instock account
-olympus optical co. (uk) ltd
+samsung electronics uk ltd - digital imaging division
+sony uk consumer electronics instock account
+olympus optical co uk ltd
 samsung digital
 fujifilm
 olympus optical
 samsung phones
 sony computer
-sony - cyber-shot dsc-t77 (black)
+sony - cyber-shot dsc-t77 black
 panasonic cpfr
 panasonic deutschland gmbh
 samsung electronics gmbh dsc division
@@ -63,7 +63,7 @@ casio europe gmbh
 sigma deutschland gmbh
 olympus deutschland gmbh
 agfa
-nikon +
+nikon 
 yashica kyocera gmbh
 samsung optoelectronic gmbh
 panasonic deutschland gmbh - consumer electronics

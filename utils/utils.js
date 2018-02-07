@@ -26,9 +26,14 @@ const getDistinctValues = (items, prop) => {
     if(accum.includes(item[prop])){
       return accum;
     }
-    return [...accum, item[prop]];
+    return [...accum, sanitize(item[prop])];
   }, []);
 };
 
+// sanitize string fn
+const sanitize = (s) => {
+  // do not permit non-word characters except -
+  return s.toLowerCase().replace(/[^A-Za-z-_0-9\s]/g, '');
+};
 
-module.exports = {getInputData, logItems, getDistinctValues};
+module.exports = {getInputData, logItems, getDistinctValues, sanitize};
