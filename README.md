@@ -16,7 +16,8 @@ Execute
 ```sh
 npm test
 ```
-To watch for changes, run ```sh
+To watch for changes, run
+```sh
 npm run test-watch
 ```
 (requires nodemon).
