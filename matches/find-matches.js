@@ -1,4 +1,3 @@
-const fs = require('fs');
 const utils = require('../utils/utils');
 
 const findMatches = (cameras, products) => {
@@ -12,8 +11,8 @@ const findMatches = (cameras, products) => {
       listings
     }];
   }, []);
-  const resultsItems = results.map(JSON.stringify);
-  utils.logItems(resultsItems, './results.txt');
+  return results.map(JSON.stringify);
+
 };
 
 
