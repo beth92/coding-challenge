@@ -20,13 +20,14 @@ const logItems = (items, filename) => {
   fs.closeSync(fd);
 };
 
-// fn to extract distinct values of a property from an array of objects
+// fn to extract distinct values of a string property from an array of objects
 const getDistinctValues = (items, prop) => {
   return items.reduce((accum, item) => {
-    if(accum.includes(item[prop])){
+    const val = sanitize(item[prop]);
+    if(accum.includes(val)){
       return accum;
     }
-    return [...accum, sanitize(item[prop])];
+    return [...accum, sanitize(val)];
   }, []);
 };
 
@@ -36,4 +37,11 @@ const sanitize = (s) => {
   return s.toLowerCase().replace(/[^A-Za-z-_0-9\s]/g, '');
 };
 
-module.exports = {getInputData, logItems, getDistinctValues, sanitize};
+// check if any words in a string are contained in another string
+const wordInCommon = (s1, s2) => {
+  return sanitize(s1).split(' ').some( (word) => {
+    return sanitize(s2).split(' ').includes(word);
+  });
+};
+
+module.exports = {getInputData, logItems, getDistinctValues, sanitize, wordInCommon};
