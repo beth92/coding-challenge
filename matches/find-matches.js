@@ -1,6 +1,9 @@
 const utils = require('../utils/utils');
 
 const findMatches = (cameras, products) => {
+
+  console.log(`Checking ${cameras.length} cameras for matches`);
+
   const results = products.reduce((accum, product) => {
     const listings = cameras.filter((camera) => {
       // run tests
