@@ -11,7 +11,7 @@ const findMatches = (cameras, products) => {
       listings
     }];
   }, []);
-  return results.map(JSON.stringify);
+  return results;
 
 };
 
