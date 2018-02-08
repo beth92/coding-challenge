@@ -16,8 +16,7 @@ describe('Test coding challenge', () => {
       "model":"ES70",
       "announced-date":"2009-01-07T19:00:00.000-05:00"
     });
-    // TODO: determine length
-    // expect(testProducts.length).toBe(5);
+    expect(testProducts.length).toBe(6);
   });
 
   const testCameras = findCameras(utils.getInputData('./tests/test-listings.txt'), './tests/test-rejects.txt');
