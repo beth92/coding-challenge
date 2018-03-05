@@ -18,13 +18,10 @@ const logItems = (items, filename) => {
 
 // fn to extract distinct values of a string property from an array of objects
 const getDistinctValues = (items, prop) => {
-  return items.reduce((accum, item) => {
-    const val = sanitize(item[prop]);
-    if(accum.includes(val)){
-      return accum;
-    }
-    return [...accum, sanitize(val)];
-  }, []);
+
+  // generate array of all prop values
+  const uniqueVals =  new Set(items.map(item => sanitize(item[prop])));
+  return Array.from(uniqueVals);
 };
 
 // sanitize string fn
