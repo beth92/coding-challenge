@@ -11,7 +11,7 @@ const getInputData = (file) => {
 // fn to print array to file using \n delimiter
 const logItems = (items, filename) => {
   const fd = fs.openSync(filename, 'w');
-  const itemsString = items.reduce((accum, item) => `${accum}${item}\n`, '');
+  const itemsString = items.join('\n');
   fs.appendFileSync(fd, itemsString, 'utf8');
   fs.closeSync(fd);
 };
