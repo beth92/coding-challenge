@@ -16,7 +16,9 @@ if(!listingsPath || !productsPath) {
 const listings = utils.getInputData(path.resolve(listingsPath));
 const products = utils.getInputData(path.resolve(productsPath));
 
-dataSummary(products, listings);
+if (!process.argv.includes('-d')) {
+  dataSummary(products, listings);
+}
 
 // retrieve listings filtered for items that are likely not cameras
 const cameras = findCameras(listings, './cameras/rejects.txt');
