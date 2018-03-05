@@ -26,10 +26,7 @@ const logReject = (reject, fd) => {
 
 const checkTitle = (title) => {
   // hacky methods to check listing title for red flags
-  if(title.toLowerCase().split(' ').indexOf('for') !== -1) {
-    return false;
-  }
-  return true;
+  return title.toLowerCase().split(' ').indexOf('for') == -1;
 };
 
 const getManufacturers = () => {
@@ -38,10 +35,7 @@ const getManufacturers = () => {
 };
 
 const checkManufacturer = (man, permittedManufacturers) => {
-  if (permittedManufacturers.includes(man.toLowerCase())) {
-    return true;
-  }
-  return false;
+  return permittedManufacturers.includes(man.toLowerCase());
 };
 
 module.exports = {findCameras};
